@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Bam - Korean Food! Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91e25e2322.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header -->
+
+    <section class="header">
+        <nav>
+            <a href="index.html"></a><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Explore Korean - Goodness with us!</h1>
+            <a href="location.html" class="hero-btn">Find Us!</a>
+            <a href="menu.html" class="hero-btn">Our Menu</a>
+        </div>
+    </section>
+
+<!-- information -->
+
+<section class="information">
+    <h1>Our Information</h1>
+    <p>Our Restaurant's Mission, Vision, and Value</p>
+
+    <div class="row">
+        <div class="information-col">
+            <h3>Our Mission</h3>
+            <p>Serve Korean people the best traditional Korean food, drink, and dessert 
+            they have ever had while giving the best value and maintaning the best 
+            quality for every food, drink, and desert they order.</p>
+        </div>
+        <div class="information-col">
+            <h3>Our Vision</h3>
+            <p>We imagine a world where Korean people can get traditional Korean food, drink, 
+            and desert that are healthy also with the best quality of ingredients and service, 
+            without spending alot of money or go to a five star Korean Restaurant </p>
+        </div>
+        <div class="information-col">
+            <h3>Our Value</h3>
+            <p>Customer's Sattisfaction is our top priority, we will give them
+            a memorable experience to make our customer felt like eating in a
+            high class Korean restaurant in Korea.</p>
+        </div>
+    </div>
+</section>
+
+<!-- location -->
+
+<section class="location">
+    <h1>Our location</h1>
+    <p>We currently have 3 restaurant branches located in 3 city in Korea</p>
+
+    <div class="row">
+        <div class="location-col">
+            <img src="image/location1.png">
+            <div class="layer">
+                <h3>City: Jeonju</h3>
+                <h4>Province: Jeollabuk-do 전라북도</h4>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="image/location2.png">
+            <div class="layer">
+                <h3>City: Chuncheon	</h3>
+                <h4>Province: Ganwan-do 강원도</h4>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="image/location3.png">
+            <div class="layer">
+                <h3>City: Suwon</h3>
+                <h4>Province: Gyeonggi-do 경기도</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- recommendation -->
+
+<section class="recommendation">
+    <h1>Our Menu Recommendation</h1>
+    <p>Our food, drink, and dessert recommendation made by our professional chef</p>
+
+    <div class="row">
+        <div class="recommendation-col">
+            <h3>Food</h3>
+            <img src="image/menu1.png">
+            <div class="info">
+                <h4>Bulgogi (marinated beef barbecue)</h4>
+                <h4>험악한</h4>
+                <h5>₩5000 (won)</h5>
+            </div>
+        </div>
+        <div class="recommendation-col">
+            <h3>Drink</h3>
+            <img src="image/menu2.png">
+            <div class="info">
+                <h4>Oksusu cha (corn tea)</h4>
+                <h4>옥수수 차</h4>
+                <h5>₩1000 (won)</h5>
+            </div>
+        </div>
+        <div class="recommendation-col">
+            <h3>Dessert</h3>
+            <img src="image/menu3.png">
+            <div class="info">
+                <h4>Patbingsu (red bean ice flakes)</h4>
+                <h4>팥빙수</h4>
+                <h5>₩2000 (won)</h5>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- call to action -->
+
+<section class="cta">
+    <h1>Click the Button below to Order</h1>
+    <a href="" class="hero-btn1">ORDER NOW</a>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <div class="icon">
+        <i class="fa fa-facebook"> Facebook: Dan_Bam_Restaurant_Official</i>
+        <i class="fa fa-instagram"> Instagram: @Official_Dan_Bam_Restaurant</i> 
+    </div>
+    <p>Made by Derris and Nathanael Dihyan</p>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0px";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+    
+</body>
+</html>

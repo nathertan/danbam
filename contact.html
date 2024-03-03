@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Bam Restaurant-Contact us Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91e25e2322.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- sub-header -->
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<section class="contactus">
+<div class="container2">
+    <div class="header2">
+        <h2>Contact Us</h2>
+    </div>
+    <form class="form" id="form">
+        <div class="form-control">
+            <label>Name</label>
+            <input type="text" placeholder="name" id="nama">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label>Email</label>
+            <input type="text" placeholder="email" id="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label>Gender</label>
+            <input type="text" placeholder="'male' or 'female'" id="gender">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label>Location</label>
+            <input type="text" placeholder="'jeonjun' or 'chuncheon' or 'suwon'" id="lokasi">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label>Message</label>
+            <input type="text" placeholder="message" id="message">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+        <button>Submit</button>
+    </form>
+</div>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <div class="icon">
+        <i class="fa fa-facebook"> Facebook: Dan_Bam_Restaurant_Official</i>
+        <i class="fa fa-instagram"> Instagram: @Official_Dan_Bam_Restaurant</i> 
+    </div>
+    <p>Made by Derris and Nathanael Dihyan</p>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0px";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+    
+<!-- source script untuk javascript validation -->
+<script src="main2.js"></script>
+
+
+</body>
+</html>

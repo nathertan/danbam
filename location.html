@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Bam Restaurant-About Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91e25e2322.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- sub-header -->
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Location</h1>
+    </section>
+
+<!-- location -->
+
+<section class="location">
+    <h1>Our Restaurant Branches</h1>
+    <p>We currently have 3 restaurant branches located in 3 city in Korea</p>
+
+    <div class="row">
+        <div class="location-col">
+            <img src="image/location1.png">
+            <div class="layer plus">
+                <h3>City: Jeonju</h3>
+                <h4>Province: Jeollabuk-do 전라북도</h4>
+            </div>
+            <div class="address">
+                <p>Address : 15-4 Jungsan 6-gil, Junghwasan 2(i)-dong, Wansan-gu, Jeonju-si, Jeollabuk-do, South Korea</p>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="image/location2.png">
+            <div class="layer plus">
+                <h3>City: Chuncheon	</h3>
+                <h4>Province: Ganwan-do 강원도</h4>
+            </div>
+            <div class="address">
+                <p>Address : 163 Mancheon-ro, Dong-myeon, Chuncheon-si, Gangwon-do, South Korea</p>
+            </div>
+        </div>
+        <div class="location-col">
+            <img src="image/location3.png">
+            <div class="layer plus">
+                <h3>City: Suwon</h3>
+                <h4>Province: Gyeonggi-do 경기도</h4>
+            </div>
+            <div class="address">
+                <p>Address : 12 Changnyong-daero 41beon-gil, Maehyang-dong, Paldal-gu, Suwon-si, Gyeonggi-do, South Korea</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- location in google map -->
+
+<section class="location">
+    <h2>Our Restaurant Branches in Google Map</h2>
+    <div class="row">
+        <div class="location-col">
+            <h5>Restaurant Branch in Jeonju</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765.480880798863!2d127.1183033664951!3d35.82113474397705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcff20d8a5a449c5e!2z66eI7J207IKw7IyI67Cl!5e0!3m2!1sid!2sid!4v1624007785499!5m2!1sid!2sid"></iframe>
+        </div>
+        <div class="location-col">
+            <h5>Restaurant Branch in Chuncheon</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6298.0564725145905!2d127.75293277676901!3d37.88302235127107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3490c9ea96c4c3b5!2sHajugol!5e0!3m2!1sid!2sid!4v1624019715102!5m2!1sid!2sid"></iframe>
+        </div>
+        <div class="location-col">
+            <h5>Restaurant Branch in Suwon</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50794.89703147424!2d126.99083036161662!3d37.27898941574981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x70333f3a1d7a3ac5!2z7ZmU7ISx67OE6rSA6raB7KSR7JqU66as!5e0!3m2!1sid!2sid!4v1624019906248!5m2!1sid!2sid"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <div class="icon">
+        <i class="fa fa-facebook"> Facebook: Dan_Bam_Restaurant_Official</i>
+        <i class="fa fa-instagram"> Instagram: @Official_Dan_Bam_Restaurant</i> 
+    </div>
+    <p>Made by Derris and Nathanael Dihyan</p>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0px";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+    
+</body>
+</html>

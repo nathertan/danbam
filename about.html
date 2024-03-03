@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Bam Restaurant-About Us Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91e25e2322.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- sub-header -->
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="image/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Location</h1>
+</section>
+
+<!-- information -->
+
+<section class="information">
+    <h1>Our Information</h1>
+    <p>Our Restaurant's Mission, Vision, and Value</p>
+
+    <div class="row">
+        <div class="information-col">
+            <h3>Our Mission</h3>
+            <p>Serve Korean people the best traditional Korean food, drink, and dessert 
+            they have ever had while giving the best value and maintaning the best 
+            quality for every food, drink, and desert they order.</p>
+        </div>
+        <div class="information-col">
+            <h3>Our Vision</h3>
+            <p>We imagine a world where Korean people can get traditional Korean food, drink, 
+            and desert that are healthy also with the best quality of ingredients and service, 
+            without spending alot of money or go to a five star Korean Restaurant </p>
+        </div>
+        <div class="information-col">
+            <h3>Our Value</h3>
+            <p>Customer's Sattisfaction is our top priority, we will give them
+            a memorable experience to make our customer felt like eating in a
+            high class Korean restaurant in Korea.</p>
+        </div>
+    </div>
+</section>
+
+<!-- about us content -->
+<section class="about-us">
+    <h1>In Our Restaurant You Can Discover</h1>
+    <div class="row">
+        <div class="about-col">
+            <div class="info">
+                <h2>Taste of Home</h2>
+                <p>Dan Bam prioritize on maintaining the original taste 
+                of dishes and authenticity of Korean cuisine . At Dan Bam, 
+                we put continuous effort to provide more of health-conscious
+                choices, using fresh and organic ingredients.</p>
+            </div>
+        </div>
+        <div class="about-col">
+            <img src="image/about.jpg">
+        </div>
+        <div class="about-col">
+            <div class="info">
+                <h2>Traditional Cuisine</h2>
+                <p>Korean cuisine reflects tradition and culture of Korea, 
+                and now it is loved by the world, being recognized as one of 
+                the healthiest foods. Dan bam provides nutritionally balanced 
+                and healthy meal, just like the taste of food that you can have
+                it at home.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <div class="icon">
+        <i class="fa fa-facebook"> Facebook: Dan_Bam_Restaurant_Official</i>
+        <i class="fa fa-instagram"> Instagram: @Official_Dan_Bam_Restaurant</i> 
+    </div>
+    <p>Made by Derris and Nathanael Dihyan</p>
+</section>
+
+<!-- Javascript for Toggle Menu -->
+
+<script>
+    var navLinks=document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right="0px";
+    }
+
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+    
+</body>
+</html>
